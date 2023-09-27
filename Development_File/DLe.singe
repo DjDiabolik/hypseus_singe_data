@@ -311,7 +311,7 @@ function setupMoves(thisLevel, thisScene)
 
 		if thisScene == 1 then 
 
-			sceneStart = 1215
+			sceneStart = 1216
 			sceneEnd   = 1614
 			totalMoves   = 4
 			
@@ -332,8 +332,9 @@ function setupMoves(thisLevel, thisScene)
 						
 			move[1] = {1759, 1774, RIGHT, 2}
 			move[2] = {1792, 1805, PATH, 3}
+			move[3] = {1806, 1850, WAY, 0}
 
-			path[2] = {LEFT, 2002, DOWN, 2003, RIGHT, 0, 0, OUT}
+			path[2] = {LEFT, 2002, DOWN, 2003, RIGHT, 3, 0, 0, 0}
 							
 		end
 
@@ -343,12 +344,13 @@ function setupMoves(thisLevel, thisScene)
 
 			sceneStart = 1862
 			sceneEnd   = 2075
-			totalMoves   = 2
+			totalMoves   = 3
 			
 			move[1] = {1871, 1896, RIGHT, -1}			
 			move[2] = {2039, 2054, PATH, 4}
+			move[3] = {2061, 2075, WAY, 0}
 
-			path[2] = {RIGHT, 0, UP, 2004, 0, 0, 0, 0 , OUT}
+			path[2] = {RIGHT, 3, UP, 2004, 0, 0, 0, 0 , 0}
 
 		end
 	
@@ -384,7 +386,7 @@ function setupMoves(thisLevel, thisScene)
 			totalMoves   = 2
 			
 			move[1] = {2483, 2528, PATH, 10}		
-			move[2] = {2528, 2576, WAY, 0}
+			move[2] = {2529, 2576, WAY, 0}
 			
 			path[1] = {UP, 2009, RIGHT, 2, LEFT, 2010, DOWN, 2010, 0}
 
