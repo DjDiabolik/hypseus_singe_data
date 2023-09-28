@@ -1,6 +1,6 @@
 --[[
 
-MODIFICATION AND FIXED BY DjDiabolik at Sat 26 Sept 2023 at about 13:25.
+MODIFICATION AND FIXED BY DjDiabolik at Sat 29 Sept 2023 at about 00:15.
 Changelog:
 Try to FIX and made better the "DEAD END" situation expecially when you use the HINTS on screen.
 On Level 5 you can see the real difference!
@@ -385,10 +385,10 @@ function setupMoves(thisLevel, thisScene)
 			sceneEnd   = 2576
 			totalMoves   = 2
 			
-			move[1] = {2483, 2528, PATH, 10}		
+			move[1] = {2481, 2528, PATH, 10}		
 			move[2] = {2529, 2576, WAY, 0}
 			
-			path[1] = {UP, 2009, RIGHT, 2, LEFT, 2010, DOWN, 2010, 0}
+			path[1] = {UP, 2009, RIGHT, 2, LEFT, 1010, DOWN, 2010, 0}
 
 		end
 	
