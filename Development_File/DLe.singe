@@ -512,8 +512,8 @@ function setupMoves(thisLevel, thisScene)
 			sceneEnd   = 4869
 			totalMoves   = 4
 			
-			move[1] = {4566, 4694, TIMED, 27}
-			move[2] = {4695, 4743, TIMED, 28}
+			move[1] = {4566, 4697, TIMED, 27}
+			move[2] = {4698, 4743, TIMED, 28}
 			move[3] = {4744, 4789, TIMED, 28}
 			move[4] = {4790, 4822, TIMED, 29}
 
