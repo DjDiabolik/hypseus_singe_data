@@ -1,9 +1,9 @@
 --[[
+MODIFICATION be DjDiabolik at 29 Sept 2023 at about 00:15
+ChangeLog:
+Corrent a HUGE problems on previous "release"
 
-MODIFICATION AND FIXED BY DjDiabolik at Sat 23 Sept 2023 at about 20:20.
-Changelog:
-I need to rewrite some part of code here. Expecially on PATH moves.
-Now it's use a value 20xx for correct trigger the 'DEAD END" scene dead in Dragon's Lair.
+- Add an option to simulate correctly the "DEAD ENDS" scene expecially present on DLe.
 
 PROGRAM NAME:	LUA SINGE ENGINE
 VERSION:		3.32a
@@ -3151,29 +3151,18 @@ function doLevel()     -- Big process for level play
 						
 						iPath = path[currentMove][2]
 
-						if iPath > 1000 and iPath < 2000 then 
+						if iPath > 1000 then 
 							
-							move[currentMove][moveDeath] = iPath - 1000
+							if iPath > 2000 then
+								move[currentMove][moveDeath] = iPath - 2000
+								lvlState = branch03	 -- No Hints	(or setupDeathClip)		
+							else
+								move[currentMove][moveDeath] = iPath - 1000
+								lvlState = branch02	 -- Hints	(or setupDeathClip)		
+							end
 							bShowAction = false	
 							iPath = 0
-							lvlState = branch02	 -- Hints	(or setupDeathClip)		
-
-						else
-
-							iPathAend = path[currentMove][4] -1
-							iPathAjmp = path[currentMove][9]
-							bShowAction = false
 							
-							lvlState = branch04 -- Process Good Moves
-							
-						end
-
-						if iPath > 2000 and iPath < 3000 then 
-							
-							move[currentMove][moveDeath] = iPath - 2000
-							bShowAction = false	
-							iPath = 0
-							lvlState = branch03	 -- No Hints	(or setupDeathClip)		
 
 						else
 
@@ -3189,12 +3178,18 @@ function doLevel()     -- Big process for level play
 					
 						iPath = path[currentMove][4]
 
-						if iPath > 1000 and iPath < 2000 then 
+						if iPath > 1000 then 
 							
-							move[currentMove][moveDeath] = iPath - 1000
+							if iPath > 2000 then
+								move[currentMove][moveDeath] = iPath - 2000
+								lvlState = branch03	 -- No Hints	(or setupDeathClip)		
+							else
+								move[currentMove][moveDeath] = iPath - 1000
+								lvlState = branch02	 -- Hints	(or setupDeathClip)		
+							end
 							bShowAction = false	
 							iPath = 0
-							lvlState = branch02	 -- Hints	(or setupDeathClip)		
+							
 
 						else
 
@@ -3223,87 +3218,24 @@ function doLevel()     -- Big process for level play
 							lvlState = branch04 -- Process Good Moves
 						
 						end
-						
-						if iPath > 2000 and iPath < 3000 then 
-							
-							move[currentMove][moveDeath] = iPath - 2000
-							bShowAction = false	
-							iPath = 0
-							lvlState = branch03	 -- No Hints	(or setupDeathClip)		
 
-						else
-
-							if path[currentMove][5] == 0 then
-
-								iPathAend = 0
-								
-								if path[currentMove][9]~=OUT then 
-								
-									iPathAjmp = 0 
-
-								else
-
-									iPathAjmp = OUT
-
-								end
-
-							else
-								
-								iPathAend = path[currentMove][6] -1
-								iPathAjmp = path[currentMove][9]
-								
-							end
-
-							bShowAction = false
-							lvlState = branch04 -- Process Good Moves
-						
-						end
 
 					elseif thisMove == path[currentMove][5] then
 					
 						iPath = path[currentMove][6]
 
-						if iPath > 1000 and iPath < 2000 then 
+						if iPath > 1000 then 
 							
-							move[currentMove][moveDeath] = iPath - 1000
-							bShowAction = false	
-							iPath = 0
-							lvlState = branch02	 -- Hints	(or setupDeathClip)		
-
-						else
-
-							if path[currentMove][4] == 0 then
-
-								iPathAend = 0
-
-								if path[currentMove][9]~=OUT then 
-								
-									iPathAjmp = 0 
-
-								else
-
-									iPathAjmp = OUT
-
-								end
-
+							if iPath > 2000 then
+								move[currentMove][moveDeath] = iPath - 2000
+								lvlState = branch03	 -- No Hints	(or setupDeathClip)		
 							else
-								
-								iPathAend = path[currentMove][8] -1
-								iPathAjmp = path[currentMove][9]
-
+								move[currentMove][moveDeath] = iPath - 1000
+								lvlState = branch02	 -- Hints	(or setupDeathClip)		
 							end
-
-							bShowAction = false
-							lvlState = branch04 -- Process Good Moves
-
-						end
-
-						if iPath > 2000 and iPath < 3000 then 
-							
-							move[currentMove][moveDeath] = iPath - 2000
 							bShowAction = false	
 							iPath = 0
-							lvlState = branch03	 -- No Hints	(or setupDeathClip)		
+							
 
 						else
 
@@ -3337,39 +3269,18 @@ function doLevel()     -- Big process for level play
 					
 						iPath = path[currentMove][8]
 
-						if iPath > 1000 and iPath < 2000 then 
+						if iPath > 1000 then 
 							
-							move[currentMove][moveDeath] = iPath - 1000
+							if iPath > 2000 then
+								move[currentMove][moveDeath] = iPath - 2000
+								lvlState = branch03	 -- No Hints	(or setupDeathClip)		
+							else
+								move[currentMove][moveDeath] = iPath - 1000
+								lvlState = branch02	 -- Hints	(or setupDeathClip)		
+							end
 							bShowAction = false	
 							iPath = 0
-							lvlState = branch02	 -- Hints	(or setupDeathClip)		
-
-						else
-
-							iPathAend = 0
-
-							if path[currentMove][9]~=OUT then 
-								
-									iPathAjmp = 0 
-
-								else
-
-									iPathAjmp = OUT
-
-								end
 							
-							bShowAction = false
-							
-							lvlState = branch04 -- Process Good Moves
-
-						end
-
-						if iPath > 2000 and iPath < 3000 then 
-							
-							move[currentMove][moveDeath] = iPath - 2000
-							bShowAction = false	
-							iPath = 0
-							lvlState = branch03	 -- No Hints	(or setupDeathClip)		
 
 						else
 
