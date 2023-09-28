@@ -388,7 +388,7 @@ function setupMoves(thisLevel, thisScene)
 			move[1] = {2481, 2528, PATH, 10}		
 			move[2] = {2529, 2576, WAY, 0}
 			
-			path[1] = {UP, 2009, RIGHT, 2, LEFT, 1010, DOWN, 2010, 0}
+			path[1] = {UP, 2009, RIGHT, 2, LEFT, 2010, DOWN, 2010, 0}
 
 		end
 	
