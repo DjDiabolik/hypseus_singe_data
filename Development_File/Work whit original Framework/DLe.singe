@@ -1,10 +1,11 @@
 --[[
 
-MODIFICATION AND FIXED BY DjDiabolik at Sun 01 Oct 2023 at about 15:15.
+MODIFICATION AND FIXED BY DjDiabolik at Sat 29 Sept 2023 at about 00:15.
 Changelog:
-OOOHH Finally...... this totally 'newest" Revision of DLe.singe 
-problably work good also whit Original and untouched version of Karis Framework!
-'Pick your copy' of current original 3.32 Karis DLe.... put my current DLe.singe and Testing it.
+Try to FIX and made better the "DEAD END" situation expecially when you use the HINTS on screen.
+On Level 5 you can see the real difference!
+On date 26 Sept 2023:
+Fixed some TIMED event at Level 15! Add a WAY scene previously cutted out whitout any sense.
 
 PROGRAM NAME:	DRAGON'S LAIR 
 VERSION:		3.32b
@@ -377,7 +378,7 @@ function setupMoves(thisLevel, thisScene)
 			move[9] = {2449, 2465, WAY, 0}
 
 			path[2] = {RIGHT, 3, UP, 5, DOWN, 4, LEFT, 4, 3}
-			timed[1] = {UP,2423,2433,7,8}
+			timed[1] = {UP,2423,2433,8}
 			timed[2] = {UP,2440,2448,8}
 
 		end
@@ -396,7 +397,7 @@ function setupMoves(thisLevel, thisScene)
 			move[3] = {2528, 2528, RIGHT, 10}
 			move[4] = {2529, 2576, WAY, 0}
 			
-			path[1] = {UP, 2, LEFT, 3, RIGHT, 4, DOWN, 3, 0}
+			path[1] = {UP, 2, LEFT, 3, RIGHT, 4, DOWN, 3, 3}
 			
 
 		end
