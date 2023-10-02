@@ -331,7 +331,7 @@ function setupMoves(thisLevel, thisScene)
 			totalMoves   = 5
 						
 			move[1] = {1759, 1774, RIGHT, 2}
-			move[2] = {1792, 1804, PATH, 3}
+			move[2] = {1792, 1804, PATH, -1}
 			move[3] = {1805, 1806, RIGHT, 3}
 			move[4] = {1807, 1808, RIGHT, 2}
 			move[5] = {1806, 1849, WAY, 0}
@@ -350,8 +350,8 @@ function setupMoves(thisLevel, thisScene)
 			totalMoves   = 4
 			
 			move[1] = {1871, 1896, RIGHT, -1}			
-			move[2] = {2039, 2051, PATH, 4}
-			move[3] = {2052, 2052, RIGHT, 4}
+			move[2] = {2039, 2051, PATH, -1}
+			move[3] = {2052, 2053, RIGHT, 4}
 			move[4] = {2061, 2074, WAY, 0}
 
 
@@ -368,7 +368,7 @@ function setupMoves(thisLevel, thisScene)
 			totalMoves   = 9
 			
 			move[1] = {2167, 2180, BUTTON1, 5}
-			move[2] = {2226, 2237, PATH, 6}
+			move[2] = {2226, 2237, PATH, -1}
 			move[3] = {2238, 2239, UP, 7}
 			move[4] = {2240, 2241, UP, 6}
 			move[5] = {2273, 2286, RIGHT, 6}
@@ -378,7 +378,7 @@ function setupMoves(thisLevel, thisScene)
 			move[9] = {2449, 2464, WAY, 0}
 
 			path[2] = {RIGHT, 3, DOWN, 4, LEFT, 4, UP, 5, 5}
-			timed[1] = {UP,2423,2433,8}
+			timed[1] = {UP,2423,2433,8,9}
 			timed[2] = {UP,2440,2448,8}
 
 		end
@@ -392,7 +392,7 @@ function setupMoves(thisLevel, thisScene)
 			sceneEnd   = 2576
 			totalMoves   = 4
 			
-			move[1] = {2482, 2527, PATH, 10}		
+			move[1] = {2482, 2527, PATH, -1}		
 			move[2] = {2529, 2530, RIGHT, 9}
 			move[3] = {2531, 2532, RIGHT, 10}
 			move[4] = {2529, 2575, WAY, 0}
@@ -503,17 +503,16 @@ function setupMoves(thisLevel, thisScene)
 
 			sceneStart = 4243
 			sceneEnd   = 4550
-			totalMoves   = 7
+			totalMoves   = 6
 			
 			move[1] = {4326, 4339, LEFT, 24}
 			move[2] = {4382, 4397, BUTTON1, 25}
-			move[3] = {4486, 4501, PATH, 24}
-			move[4] = {4502, 4503, LEFT, 26}
+			move[3] = {4486, 4501, PATH, -1}
+			move[4] = {4502, 4503, LEFT, 24}
 			move[5] = {4504, 4505, LEFT, 26}
-			move[6] = {4506, 4507, LEFT, 26}
-			move[7] = {4507, 4519, LEFT, 24}
+			move[6] = {4507, 4519, LEFT, 24}
 
-			path[3] = {DOWN, 4, RIGHT, 5, UP, 6, LEFT, 7, 0}
+			path[3] = {DOWN, 4, RIGHT, 5, UP, 5, LEFT, 6, 6}
 
 		end
 
@@ -720,7 +719,7 @@ function setupMoves(thisLevel, thisScene)
 			
 			move[1] = {9402, 9416, DOWN, 62}
 			move[2] = {9441, 9456, UP, 63}
-			move[3] = {9471, 9484, PATH, 63}
+			move[3] = {9471, 9484, PATH, -1}
 			move[4] = {9485, 9486, LEFT, 61}
 			move[5] = {9488, 9488, LEFT, 63}
 			move[6] = {9486, 9508, WAY, 0}
