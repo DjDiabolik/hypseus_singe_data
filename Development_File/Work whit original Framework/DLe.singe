@@ -1,19 +1,12 @@
 --[[
 
-MODIFICATION AND FIXED BY DjDiabolik at Sat 29 Sept 2023 at about 00:15.
-Changelog:
-Try to FIX and made better the "DEAD END" situation expecially when you use the HINTS on screen.
-On Level 5 you can see the real difference!
-On date 26 Sept 2023:
-Fixed some TIMED event at Level 15! Add a WAY scene previously cutted out whitout any sense.
+PROGRAM NAME:				DRAGON'S LAIR Enhancement Singe 2 Edition
+VERSION:					Revision 2023 1.0.0 by DjDiabolik
+ORIGINAL AUTHOR/VERSION:	Karis 3.32b by KARIS (2021) <- Thanks for the great starting point. Without this I would not have come across this 'adventure'
 
-PROGRAM NAME:	DRAGON'S LAIR 
-VERSION:		3.32b
-AUTHOR:			KARIS (2021)
+This file is part of DRAGON'S LAIR ENHANCEMENT - Singe 2 Edition
 
-This file is part of DRAGON'S LAIR IIe
-
-	DRAGON'S LAIR IIe is free software: you can redistribute it and/or modify
+	DRAGON'S LAIR Enhancemente is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
 	the Free Software Foundation.
 
@@ -22,6 +15,19 @@ This file is part of DRAGON'S LAIR IIe
 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 	Thanks to Scott Duensing, RDG.
+	
+	DjDiabolik Personal Note:
+	As i already say upper here. Thanks again to Karis from great starting point. I have start to made this my personal revision for this fantastic games
+	simply because I believed that some aspects could be made better.
+	Expecially the Karis 3.32b exhibits some strange behaviors if you play this games using the HINTS Enabled. Some of the hints are really very generic.
+	I will developing an alternative approach to made this HINTS very usefull and in some way to report to user the REAL correct move to pass the point that led to his death :)
+	Dragon's Lair it's also apparently the only LaserDisc games which gives you the possibility of taking so-called "dead alleys" or "Dead End". 
+	Karis' version has in some cases double screens of hints or hints in completely incorrect scenes. So... i will try to make a better gaming experience :)
+	
+	Please give your positive or negative feedback, without possibly insulting, as comment for example on same place you have "download" this my revision. Thanks in advance.
+	
+	This review is shared completely for testing purposes. Can be create crash or every trouble/issue so
+	REMEMBER before to apply that MAKE A BACKUP OF ORIGINAL 3.32 KARIS version...
 
 ]]--
 
